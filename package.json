@@ -1,0 +1,33 @@
+{
+  "name": "node-typescript-starter",
+  "version": "1.0.0",
+  "description": "A Lightweight NodeJS TypeScript Starter",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npx mocha -r ts-node/register src/**/*.spec.ts",
+    "start": "node dist/index",
+    "watch-ts": "tsc -w",
+    "serve": "nodemon dist/index.js",
+    "build": "tsc",
+    "build-prod":
+      "npm run build && cd dist/environments/ && cp environment.prod.js environment.js && cp environment.prod.js.map environment.js.map"
+  },
+  "author": "Auphone",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/module-alias": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "module-alias": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "src",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "typeRoots": ["node_modules/@types"],
+        "lib": ["es2017", "dom"],
+        "paths": {
+            "@app/*": ["*"],
+            "@env/*": ["environments/*"]
+        }
+    }
+}
